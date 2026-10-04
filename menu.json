@@ -1,0 +1,522 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pasta con salsa de yogurt",
+        "tipo": "CENA",
+        "imagen": "imagenes/001_pasta_salsa_yogurt.png",
+        "enlace_tiktok": "https://www.tiktok.com/@carlospalomo_nutricion/video/7659480555733454102?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "macarrones",
+                "cantidad": "70 gr"
+            },
+            {
+                "ingrediente": "yogurt",
+                "cantidad": "1"
+            },
+            {
+                "ingrediente": "Queso de Untar light",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "pollo",
+                "cantidad": "120 gr"
+            },
+            {
+                "ingrediente": "tomates cherry",
+                "cantidad": "50 gr"
+            }
+        ],
+        "dias": [
+            "SABADO"
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Batata al horno con carne y Queso",
+        "tipo": "CENA",
+        "imagen": "imagenes/002_batata_horno_con_carne.png",
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "batata",
+                "cantidad": "250 gr"
+            },
+            {
+                "ingrediente": "lomo",
+                "cantidad": "150 gr"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            }
+        ],
+        "dias": [
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Patatas y pollo al horno",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/003_muslo_con_Patatas.png",
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Patatas",
+                "cantidad": "200 gr"
+            },
+            {
+                "ingrediente": "pollo",
+                "cantidad": "150 gr"
+            }
+        ],
+        "dias": [
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Lasaña de verduras y puré de Patata (medidas inventadas) Receta en",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/004_lasana_verduras.png",
+        "enlace_tiktok": "https://www.tiktok.com/@blancabmartin/video/7581595225915772182?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Patata",
+                "cantidad": "80 gr"
+            },
+            {
+                "ingrediente": "leche",
+                "cantidad": "50 ml"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "70 gr"
+            },
+            {
+                "ingrediente": "carne picada",
+                "cantidad": "125 gr"
+            },
+            {
+                "ingrediente": "zanahoria",
+                "cantidad": "1"
+            },
+            {
+                "ingrediente": "½ calabacin",
+                "cantidad": ""
+            }
+        ],
+        "dias": [
+            "SABADO"
+        ]
+    },
+    {
+        "id": 5,
+        "nombre": "Mini pizzas saludables",
+        "tipo": "CENA",
+        "imagen": "imagenes/005_mini_pizza_saludable.png",
+        "enlace_tiktok": "https://www.tiktok.com/@ugar90/video/7683101435482918147?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "garbanzos",
+                "cantidad": "150 gr"
+            },
+            {
+                "ingrediente": "Huevo",
+                "cantidad": "1"
+            },
+            {
+                "ingrediente": "Queso Cottage",
+                "cantidad": "70 gr"
+            },
+            {
+                "ingrediente": "tomate frito",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "Jamón york por cada pizza",
+                "cantidad": "1 loncha"
+            }
+        ],
+        "dias": [
+            "VIERNES"
+        ]
+    },
+    {
+        "id": 6,
+        "nombre": "Patatas rellenas de Atún",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/006_Patatas_rellenas_Atún.png",
+        "enlace_tiktok": "https://www.tiktok.com/@cestayplato/photo/7691322613875887393?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Patatas",
+                "cantidad": "300 gr"
+            },
+            {
+                "ingrediente": "Atún claro al natural",
+                "cantidad": "3 latas"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "tomate frito",
+                "cantidad": "50 gr"
+            }
+        ],
+        "dias": [
+            "VIERNES"
+        ]
+    },
+    {
+        "id": 7,
+        "nombre": "Huevos con Patatas y Jamón",
+        "tipo": "CENA",
+        "imagen": "imagenes/007_Huevos_Patata_Jamón.png",
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Huevos",
+                "cantidad": "2"
+            },
+            {
+                "ingrediente": "Jamón",
+                "cantidad": "4 lonchas"
+            },
+            {
+                "ingrediente": "Patata",
+                "cantidad": "150 gr"
+            },
+            {
+                "ingrediente": "tomates cherry",
+                "cantidad": "50 gr"
+            }
+        ],
+        "dias": [
+            "JUEVES"
+        ]
+    },
+    {
+        "id": 8,
+        "nombre": "Wrap de pollo  (Adaptada)",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/008_wrap.png",
+        "enlace_tiktok": "https://www.tiktok.com/@carliz.fit/video/7671711335712967958?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "pollo",
+                "cantidad": "150 gr"
+            },
+            {
+                "ingrediente": "",
+                "cantidad": "2 fajitas"
+            },
+            {
+                "ingrediente": "tomates cherry salteados",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "mozzarella",
+                "cantidad": "125 gr"
+            }
+        ],
+        "dias": [
+            "JUEVES"
+        ]
+    },
+    {
+        "id": 10,
+        "nombre": "ñoquis con verduras  (Adaptada)",
+        "tipo": "CENA",
+        "imagen": "imagenes/010_gnoccis_verduras.png",
+        "enlace_tiktok": "https://www.tiktok.com/@fatimajapon_/photo/7679872194859617558?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "ñoquis",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "calabacin",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "tomates cherry",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "lomo",
+                "cantidad": "150 gr"
+            }
+        ],
+        "dias": [
+            "MIERCOLES"
+        ]
+    },
+    {
+        "id": 11,
+        "nombre": "Huevos a la plancha con Jamón y Champis",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/011_Huevos_Champis.png",
+        "enlace_tiktok": "https://www.tiktok.com/@fatimajapon_/photo/7679872194859617558?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Huevos",
+                "cantidad": "2"
+            },
+            {
+                "ingrediente": "Jamón",
+                "cantidad": "2 Lonchas"
+            },
+            {
+                "ingrediente": "Patata",
+                "cantidad": "200 gr"
+            },
+            {
+                "ingrediente": "Champiñones",
+                "cantidad": "60 gr"
+            }
+        ],
+        "dias": [
+            "MIERCOLES"
+        ]
+    },
+    {
+        "id": 12,
+        "nombre": "Pizza de Patata pisada",
+        "tipo": "CENA",
+        "imagen": "imagenes/012_Patata_pisada.png",
+        "enlace_tiktok": "https://www.tiktok.com/@vivieonx/video/7665754711152266518?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Patata",
+                "cantidad": "250 gr"
+            },
+            {
+                "ingrediente": "Atún",
+                "cantidad": "2 latas"
+            },
+            {
+                "ingrediente": "tomate triturado",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            }
+        ],
+        "dias": [
+            "MARTES"
+        ]
+    },
+    {
+        "id": 13,
+        "nombre": "Garbanzos al horno",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/013_garbanzos_horno.png",
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Garbanzos cocidos",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "calabacin",
+                "cantidad": "250 gr"
+            },
+            {
+                "ingrediente": "Huevo",
+                "cantidad": "1"
+            },
+            {
+                "ingrediente": "arroz",
+                "cantidad": "70 gr"
+            }
+        ],
+        "dias": [
+            "MARTES"
+        ]
+    },
+    {
+        "id": 14,
+        "nombre": "Pollo con Champiñones",
+        "tipo": "CENA",
+        "imagen": "imagenes/014_pollo_Champis.png",
+        "enlace_tiktok": "https://www.tiktok.com/@fznutricionfemenina/photo/7598653856121146646?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Champiñones laminados ",
+                "cantidad": "200 gr o 300 gr"
+            },
+            {
+                "ingrediente": "Pechuga de pollo",
+                "cantidad": "150gr (media pechuga)"
+            },
+            {
+                "ingrediente": "yogurt",
+                "cantidad": "1"
+            },
+            {
+                "ingrediente": "Queso crema",
+                "cantidad": "60 gr"
+            }
+        ],
+        "dias": [
+            "LUNES"
+        ]
+    },
+    {
+        "id": 15,
+        "nombre": "Macarrones  (Cambiar pesto por tomate frito)",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/015_pasta_cottage.png",
+        "enlace_tiktok": "https://www.tiktok.com/@fznutricionfemenina/photo/7598653856121146646?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Macarrones",
+                "cantidad": "120 gr"
+            },
+            {
+                "ingrediente": "Tomate cherry",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "Queso Cottage",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "Tomate frito",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "Atún",
+                "cantidad": "1 lata"
+            }
+        ],
+        "dias": [
+            "LUNES"
+        ]
+    },
+    {
+        "id": 16,
+        "nombre": "Tostada de pavo",
+        "tipo": "DESAYUNO",
+        "imagen": null,
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Pan de molde",
+                "cantidad": "1 Rebanada"
+            },
+            {
+                "ingrediente": "Queso philadelphia",
+                "cantidad": "20 gr"
+            },
+            {
+                "ingrediente": "Pechuga de Pavo cocida",
+                "cantidad": "1 Loncha"
+            }
+        ],
+        "dias": [
+            "LUNES",
+            "MARTES",
+            "MIERCOLES",
+            "JUEVES",
+            "VIERNES",
+            "SABADO",
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 17,
+        "nombre": "Vaso con Cacao",
+        "tipo": "DESAYUNO",
+        "imagen": null,
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "1 Vaso de Leche desnatada",
+                "cantidad": "250 ml"
+            },
+            {
+                "ingrediente": "Cacao Puro Desgrasado",
+                "cantidad": "30 g"
+            }
+        ],
+        "dias": [
+            "LUNES",
+            "MARTES",
+            "MIERCOLES",
+            "JUEVES",
+            "VIERNES",
+            "SABADO",
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 18,
+        "nombre": "Tostada de pavo",
+        "tipo": "MERIENDA",
+        "imagen": null,
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Pan de molde",
+                "cantidad": "1 Rebanada"
+            },
+            {
+                "ingrediente": "Queso philadelphia",
+                "cantidad": "20 gr"
+            },
+            {
+                "ingrediente": "Pechuga de Pavo cocida",
+                "cantidad": "1 Loncha"
+            }
+        ],
+        "dias": [
+            "LUNES",
+            "MARTES",
+            "MIERCOLES",
+            "JUEVES",
+            "VIERNES",
+            "SABADO",
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 19,
+        "nombre": "Queso fresco batido",
+        "tipo": "MERIENDA",
+        "imagen": null,
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Queso freco batido 0%",
+                "cantidad": "62 gr"
+            },
+            {
+                "ingrediente": "Frutos Rojos",
+                "cantidad": "1 puñado"
+            }
+        ],
+        "dias": [
+            "LUNES",
+            "MARTES",
+            "MIERCOLES",
+            "JUEVES",
+            "VIERNES",
+            "SABADO",
+            "DOMINGO"
+        ]
+    }
+]
