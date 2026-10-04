@@ -179,7 +179,7 @@
         "id": 7,
         "nombre": "Huevos con Patatas y Jamón",
         "tipo": "CENA",
-        "imagen": "imagenes/007_Huevos_Patata_Jamón.png",
+        "imagen": "imagenes/007_huevos_patata_jamón.png",
         "enlace_tiktok": null,
         "ingredientes": [
             {
@@ -267,7 +267,7 @@
         "id": 11,
         "nombre": "Huevos a la plancha con Jamón y Champis",
         "tipo": "COMIDA",
-        "imagen": "imagenes/011_Huevos_Champis.png",
+        "imagen": "imagenes/011_huevos_champis.png",
         "enlace_tiktok": "https://www.tiktok.com/@fatimajapon_/photo/7679872194859617558?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {
