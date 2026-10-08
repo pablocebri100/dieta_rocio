@@ -59,7 +59,7 @@
         "id": 3,
         "nombre": "Patatas y pollo al horno",
         "tipo": "COMIDA",
-        "imagen": "imagenes/003_muslo_con_Patatas.png",
+        "imagen": "imagenes/003_muslo_con_patatas.png",
         "enlace_tiktok": null,
         "ingredientes": [
             {
@@ -151,7 +151,7 @@
         "id": 6,
         "nombre": "Patatas rellenas de Atún",
         "tipo": "COMIDA",
-        "imagen": "imagenes/006_Patatas_rellenas_Atún.png",
+        "imagen": "imagenes/006_patatas_rellenas_atun.png",
         "enlace_tiktok": "https://www.tiktok.com/@cestayplato/photo/7691322613875887393?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {
@@ -179,7 +179,7 @@
         "id": 7,
         "nombre": "Huevos con Patatas y Jamón",
         "tipo": "CENA",
-        "imagen": "imagenes/007_huevos_patata_jamón.png",
+        "imagen": "imagenes/007_huevos_patata_jamon.png",
         "enlace_tiktok": null,
         "ingredientes": [
             {
@@ -295,7 +295,7 @@
         "id": 12,
         "nombre": "Pizza de Patata pisada",
         "tipo": "CENA",
-        "imagen": "imagenes/012_Patata_pisada.png",
+        "imagen": "imagenes/012_patata_pisada.png",
         "enlace_tiktok": "https://www.tiktok.com/@vivieonx/video/7665754711152266518?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {
@@ -351,7 +351,7 @@
         "id": 14,
         "nombre": "Pollo con Champiñones",
         "tipo": "CENA",
-        "imagen": "imagenes/014_pollo_Champis.png",
+        "imagen": "imagenes/014_pollo_champis.png",
         "enlace_tiktok": "https://www.tiktok.com/@fznutricionfemenina/photo/7598653856121146646?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {

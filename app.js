@@ -96,6 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         platoInfo.appendChild(btnTiktok);
                     }
 
+                    platoHeader.appendChild(platoInfo);
                     if (plato.imagen && !plato.imagen.includes('imagen_no_encontrada')) {
                         const img = document.createElement('img');
                         img.className = 'plato-img';
@@ -105,7 +106,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         platoHeader.appendChild(img);
                     }
 
-                    platoHeader.appendChild(platoInfo);
+                    
                     platoContenedor.appendChild(platoHeader);
 
                     if (plato.ingredientes && plato.ingredientes.length > 0) {
