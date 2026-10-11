@@ -29,7 +29,11 @@
         ],
         "dias": [
             "SABADO"
-        ]
+        ],
+        "kcal_totales": 653.0,
+        "grasa_total": 19.28,
+        "carbohidratos_totales": 62.96,
+        "proteina_total": 53.5
     },
     {
         "id": 2,
@@ -53,7 +57,11 @@
         ],
         "dias": [
             "DOMINGO"
-        ]
+        ],
+        "kcal_totales": 670.0,
+        "grasa_total": 25.66,
+        "carbohidratos_totales": 61.97,
+        "proteina_total": 49.03
     },
     {
         "id": 3,
@@ -73,7 +81,11 @@
         ],
         "dias": [
             "DOMINGO"
-        ]
+        ],
+        "kcal_totales": 442.0,
+        "grasa_total": 11.88,
+        "carbohidratos_totales": 33.38,
+        "proteina_total": 48.12
     },
     {
         "id": 4,
@@ -109,7 +121,11 @@
         ],
         "dias": [
             "SABADO"
-        ]
+        ],
+        "kcal_totales": 565.0,
+        "grasa_total": 30.42,
+        "carbohidratos_totales": 33.26,
+        "proteina_total": 41.55
     },
     {
         "id": 5,
@@ -131,6 +147,10 @@
                 "cantidad": "70 gr"
             },
             {
+                "ingrediente": "Pechuga de pollo",
+                "cantidad": "130"
+            },
+            {
                 "ingrediente": "tomate frito",
                 "cantidad": "50 gr"
             },
@@ -145,7 +165,11 @@
         ],
         "dias": [
             "VIERNES"
-        ]
+        ],
+        "kcal_totales": 690.0,
+        "grasa_total": 33.97,
+        "carbohidratos_totales": 24.45,
+        "proteina_total": 66.63
     },
     {
         "id": 6,
@@ -173,7 +197,11 @@
         ],
         "dias": [
             "VIERNES"
-        ]
+        ],
+        "kcal_totales": 538.0,
+        "grasa_total": 24.54,
+        "carbohidratos_totales": 22.69,
+        "proteina_total": 54.3
     },
     {
         "id": 7,
@@ -201,7 +229,11 @@
         ],
         "dias": [
             "JUEVES"
-        ]
+        ],
+        "kcal_totales": 371.0,
+        "grasa_total": 15.69,
+        "carbohidratos_totales": 26.54,
+        "proteina_total": 30.54
     },
     {
         "id": 8,
@@ -229,7 +261,11 @@
         ],
         "dias": [
             "JUEVES"
-        ]
+        ],
+        "kcal_totales": 777.0,
+        "grasa_total": 29.53,
+        "carbohidratos_totales": 50.13,
+        "proteina_total": 74.29
     },
     {
         "id": 10,
@@ -261,7 +297,11 @@
         ],
         "dias": [
             "MIERCOLES"
-        ]
+        ],
+        "kcal_totales": 519.0,
+        "grasa_total": 14.09,
+        "carbohidratos_totales": 42.49,
+        "proteina_total": 58.04
     },
     {
         "id": 11,
@@ -289,7 +329,11 @@
         ],
         "dias": [
             "MIERCOLES"
-        ]
+        ],
+        "kcal_totales": 480.0,
+        "grasa_total": 20.66,
+        "carbohidratos_totales": 33.58,
+        "proteina_total": 38.63
     },
     {
         "id": 12,
@@ -317,7 +361,11 @@
         ],
         "dias": [
             "MARTES"
-        ]
+        ],
+        "kcal_totales": 541.0,
+        "grasa_total": 13.47,
+        "carbohidratos_totales": 54.79,
+        "proteina_total": 49.45
     },
     {
         "id": 13,
@@ -332,11 +380,11 @@
             },
             {
                 "ingrediente": "calabacin",
-                "cantidad": "250 gr"
+                "cantidad": "200 gr"
             },
             {
                 "ingrediente": "Huevo",
-                "cantidad": "1"
+                "cantidad": "2"
             },
             {
                 "ingrediente": "arroz",
@@ -345,7 +393,11 @@
         ],
         "dias": [
             "MARTES"
-        ]
+        ],
+        "kcal_totales": 610.0,
+        "grasa_total": 15.03,
+        "carbohidratos_totales": 184.63,
+        "proteina_total": 31.54
     },
     {
         "id": 14,
@@ -356,11 +408,21 @@
         "ingredientes": [
             {
                 "ingrediente": "Champiñones laminados ",
-                "cantidad": "200 gr o 300 gr"
+                "cantidad": "200 gr o 300 gr",
+                "nombre_fatsecret": "Hacendado Champiñones Laminados",
+                "kcal": "63",
+                "grasa": "0,30",
+                "carbohidratos": "4,50",
+                "proteina": "8,40"
             },
             {
                 "ingrediente": "Pechuga de pollo",
-                "cantidad": "150gr (media pechuga)"
+                "cantidad": "150gr (media pechuga)",
+                "nombre_fatsecret": "Pechuga de Pollo",
+                "kcal": "293",
+                "grasa": "11,58",
+                "carbohidratos": "0",
+                "proteina": "44,32"
             },
             {
                 "ingrediente": "yogurt",
@@ -368,12 +430,21 @@
             },
             {
                 "ingrediente": "Queso crema",
-                "cantidad": "60 gr"
+                "cantidad": "60 gr",
+                "nombre_fatsecret": "Hacendado Queso Crema Light",
+                "kcal": "78",
+                "grasa": "4,98",
+                "carbohidratos": "2,88",
+                "proteina": "5,40"
             }
         ],
         "dias": [
             "LUNES"
-        ]
+        ],
+        "kcal_totales": 479.0,
+        "grasa_total": 16.96,
+        "carbohidratos_totales": 12.98,
+        "proteina_total": 63.52
     },
     {
         "id": 15,
@@ -405,7 +476,11 @@
         ],
         "dias": [
             "LUNES"
-        ]
+        ],
+        "kcal_totales": 652.0,
+        "grasa_total": 8.87,
+        "carbohidratos_totales": 97.6,
+        "proteina_total": 43.99
     },
     {
         "id": 16,
@@ -507,6 +582,36 @@
             {
                 "ingrediente": "Frutos Rojos",
                 "cantidad": "1 puñado"
+            }
+        ],
+        "dias": [
+            "LUNES",
+            "MARTES",
+            "MIERCOLES",
+            "JUEVES",
+            "VIERNES",
+            "SABADO",
+            "DOMINGO"
+        ]
+    },
+    {
+        "id": 20,
+        "nombre": "Tostada de Jamón",
+        "tipo": "Almuerzo",
+        "imagen": null,
+        "enlace_tiktok": null,
+        "ingredientes": [
+            {
+                "ingrediente": "Pan de molde",
+                "cantidad": "1 Rebanada"
+            },
+            {
+                "ingrediente": "Queso philadelphia",
+                "cantidad": "20 gr"
+            },
+            {
+                "ingrediente": "Jamon serrano",
+                "cantidad": "1 Loncha"
             }
         ],
         "dias": [

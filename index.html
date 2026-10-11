@@ -1,3 +1,8 @@
+<!--
+python -m http.server 8000
+http://localhost:8000
+-->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,6 +24,13 @@
                 <option value="VIERNES">Viernes</option>
                 <option value="SABADO">Sábado</option>
                 <option value="DOMINGO">Domingo</option>
+            </select>
+        </div>
+        <div class="controles-orden">
+            <select id="selectorOrden">
+                <option value="defecto">Ordenar recetas...</option>
+                <option value="kcal_asc">Calorías (Menor a Mayor)</option>
+                <option value="prot_desc">Proteínas (Mayor a Menor)</option>
             </select>
         </div>
     </header>
