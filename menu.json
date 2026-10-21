@@ -27,9 +27,6 @@
                 "cantidad": "50 gr"
             }
         ],
-        "dias": [
-            "SABADO"
-        ],
         "kcal_totales": 653.0,
         "grasa_total": 19.28,
         "carbohidratos_totales": 62.96,
@@ -44,11 +41,11 @@
         "ingredientes": [
             {
                 "ingrediente": "batata",
-                "cantidad": "250 gr"
+                "cantidad": "300 gr"
             },
             {
-                "ingrediente": "lomo",
-                "cantidad": "150 gr"
+                "ingrediente": "pollo",
+                "cantidad": "125 gr"
             },
             {
                 "ingrediente": "Queso rallado",
@@ -56,12 +53,12 @@
             }
         ],
         "dias": [
-            "DOMINGO"
+            "SABADO"
         ],
-        "kcal_totales": 670.0,
-        "grasa_total": 25.66,
-        "carbohidratos_totales": 61.97,
-        "proteina_total": 49.03
+        "kcal_totales": 707.0,
+        "grasa_total": 21.0,
+        "carbohidratos_totales": 74.0,
+        "proteina_total": 52.28
     },
     {
         "id": 3,
@@ -72,31 +69,35 @@
         "ingredientes": [
             {
                 "ingrediente": "Patatas",
-                "cantidad": "200 gr"
+                "cantidad": "250 gr"
             },
             {
                 "ingrediente": "pollo",
-                "cantidad": "150 gr"
+                "cantidad": "250 gr"
+            },
+            {
+                "ingrediente": "aceite",
+                "cantidad": "20 gr"
             }
         ],
         "dias": [
-            "DOMINGO"
+            "MIERCOLES"
         ],
-        "kcal_totales": 442.0,
-        "grasa_total": 11.88,
-        "carbohidratos_totales": 33.38,
-        "proteina_total": 48.12
+        "kcal_totales": 707.0,
+        "grasa_total": 37.0,
+        "carbohidratos_totales": 35.0,
+        "proteina_total": 49.00
     },
     {
         "id": 4,
-        "nombre": "Lasaña de verduras y puré de Patata (medidas inventadas) Receta en",
+        "nombre": "Lasaña de verduras y puré de Patata",
         "tipo": "COMIDA",
         "imagen": "imagenes/004_lasana_verduras.png",
         "enlace_tiktok": "https://www.tiktok.com/@blancabmartin/video/7581595225915772182?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {
                 "ingrediente": "Patata",
-                "cantidad": "80 gr"
+                "cantidad": "200 gr"
             },
             {
                 "ingrediente": "leche",
@@ -104,28 +105,32 @@
             },
             {
                 "ingrediente": "Queso rallado",
-                "cantidad": "70 gr"
+                "cantidad": "20 gr"
             },
             {
-                "ingrediente": "carne picada",
+                "ingrediente": "Pechuga de pollo",
                 "cantidad": "125 gr"
             },
             {
                 "ingrediente": "zanahoria",
-                "cantidad": "1"
+                "cantidad": "2"
             },
             {
-                "ingrediente": "½ calabacin",
-                "cantidad": ""
+                "ingrediente": "calabacin",
+                "cantidad": "Medio"
+            },
+            {
+                "ingrediente": "tomate frito",
+                "cantidad": "50gr"
             }
         ],
         "dias": [
-            "SABADO"
+            "DOMINGO"
         ],
-        "kcal_totales": 565.0,
-        "grasa_total": 30.42,
-        "carbohidratos_totales": 33.26,
-        "proteina_total": 41.55
+        "kcal_totales": 586.0,
+        "grasa_total": 16.42,
+        "carbohidratos_totales": 60.26,
+        "proteina_total": 50.55
     },
     {
         "id": 5,
@@ -164,7 +169,7 @@
             }
         ],
         "dias": [
-            "VIERNES"
+            "JUEVES"
         ],
         "kcal_totales": 690.0,
         "grasa_total": 33.97,
@@ -174,7 +179,7 @@
     {
         "id": 6,
         "nombre": "Patatas rellenas de Atún",
-        "tipo": "COMIDA",
+        "tipo": "CENA",
         "imagen": "imagenes/006_patatas_rellenas_atun.png",
         "enlace_tiktok": "https://www.tiktok.com/@cestayplato/photo/7691322613875887393?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
@@ -212,15 +217,15 @@
         "ingredientes": [
             {
                 "ingrediente": "Huevos",
-                "cantidad": "2"
+                "cantidad": "3"
             },
             {
                 "ingrediente": "Jamón",
-                "cantidad": "4 lonchas"
+                "cantidad": "2 lonchas (34 gr)"
             },
             {
                 "ingrediente": "Patata",
-                "cantidad": "150 gr"
+                "cantidad": "300 gr"
             },
             {
                 "ingrediente": "tomates cherry",
@@ -228,12 +233,12 @@
             }
         ],
         "dias": [
-            "JUEVES"
+            "MIERCOLES"
         ],
-        "kcal_totales": 371.0,
-        "grasa_total": 15.69,
-        "carbohidratos_totales": 26.54,
-        "proteina_total": 30.54
+        "kcal_totales": 513.0,
+        "grasa_total": 17.69,
+        "carbohidratos_totales": 55.54,
+        "proteina_total": 33.54
     },
     {
         "id": 8,
@@ -247,20 +252,24 @@
                 "cantidad": "150 gr"
             },
             {
-                "ingrediente": "",
-                "cantidad": "2 fajitas"
+                "ingrediente": "fajitas",
+                "cantidad": "2"
             },
             {
                 "ingrediente": "tomates cherry salteados",
-                "cantidad": "100 gr"
+                "cantidad": "50 gr"
             },
             {
-                "ingrediente": "mozzarella",
+                "ingrediente": "queso rallado",
                 "cantidad": "125 gr"
+            },
+            {
+                "ingrediente": "patatas",
+                "cantidad": "100 gr"
             }
         ],
         "dias": [
-            "JUEVES"
+            "VIERNES"
         ],
         "kcal_totales": 777.0,
         "grasa_total": 29.53,
@@ -280,7 +289,7 @@
             },
             {
                 "ingrediente": "calabacin",
-                "cantidad": "100 gr"
+                "cantidad": "200 gr"
             },
             {
                 "ingrediente": "tomates cherry",
@@ -296,12 +305,12 @@
             }
         ],
         "dias": [
-            "MIERCOLES"
+            "LUNES"
         ],
-        "kcal_totales": 519.0,
-        "grasa_total": 14.09,
-        "carbohidratos_totales": 42.49,
-        "proteina_total": 58.04
+        "kcal_totales": 561.0,
+        "grasa_total": 19.09,
+        "carbohidratos_totales": 47.49,
+        "proteina_total": 48.04
     },
     {
         "id": 11,
@@ -312,7 +321,7 @@
         "ingredientes": [
             {
                 "ingrediente": "Huevos",
-                "cantidad": "2"
+                "cantidad": "3"
             },
             {
                 "ingrediente": "Jamón",
@@ -320,20 +329,20 @@
             },
             {
                 "ingrediente": "Patata",
-                "cantidad": "200 gr"
+                "cantidad": "300 gr"
             },
             {
                 "ingrediente": "Champiñones",
-                "cantidad": "60 gr"
+                "cantidad": "100 gr"
             }
         ],
         "dias": [
-            "MIERCOLES"
+            "SABADO"
         ],
-        "kcal_totales": 480.0,
-        "grasa_total": 20.66,
-        "carbohidratos_totales": 33.58,
-        "proteina_total": 38.63
+        "kcal_totales": 486.0,
+        "grasa_total": 17.66,
+        "carbohidratos_totales": 46.58,
+        "proteina_total": 34.63
     },
     {
         "id": 12,
@@ -344,15 +353,15 @@
         "ingredientes": [
             {
                 "ingrediente": "Patata",
-                "cantidad": "250 gr"
+                "cantidad": "300 gr"
             },
             {
                 "ingrediente": "Atún",
                 "cantidad": "2 latas"
             },
             {
-                "ingrediente": "tomate triturado",
-                "cantidad": "100 gr"
+                "ingrediente": "tomate frito",
+                "cantidad": "50 gr"
             },
             {
                 "ingrediente": "Queso rallado",
@@ -362,10 +371,10 @@
         "dias": [
             "MARTES"
         ],
-        "kcal_totales": 541.0,
+        "kcal_totales": 512.0,
         "grasa_total": 13.47,
-        "carbohidratos_totales": 54.79,
-        "proteina_total": 49.45
+        "carbohidratos_totales": 59.79,
+        "proteina_total": 39.45
     },
     {
         "id": 13,
@@ -392,78 +401,31 @@
             }
         ],
         "dias": [
-            "MARTES"
-        ],
-        "kcal_totales": 610.0,
-        "grasa_total": 15.03,
-        "carbohidratos_totales": 184.63,
-        "proteina_total": 31.54
-    },
-    {
-        "id": 14,
-        "nombre": "Pollo con Champiñones",
-        "tipo": "CENA",
-        "imagen": "imagenes/014_pollo_champis.png",
-        "enlace_tiktok": "https://www.tiktok.com/@fznutricionfemenina/photo/7598653856121146646?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
-        "ingredientes": [
-            {
-                "ingrediente": "Champiñones laminados ",
-                "cantidad": "200 gr o 300 gr",
-                "nombre_fatsecret": "Hacendado Champiñones Laminados",
-                "kcal": "63",
-                "grasa": "0,30",
-                "carbohidratos": "4,50",
-                "proteina": "8,40"
-            },
-            {
-                "ingrediente": "Pechuga de pollo",
-                "cantidad": "150gr (media pechuga)",
-                "nombre_fatsecret": "Pechuga de Pollo",
-                "kcal": "293",
-                "grasa": "11,58",
-                "carbohidratos": "0",
-                "proteina": "44,32"
-            },
-            {
-                "ingrediente": "yogurt",
-                "cantidad": "1"
-            },
-            {
-                "ingrediente": "Queso crema",
-                "cantidad": "60 gr",
-                "nombre_fatsecret": "Hacendado Queso Crema Light",
-                "kcal": "78",
-                "grasa": "4,98",
-                "carbohidratos": "2,88",
-                "proteina": "5,40"
-            }
-        ],
-        "dias": [
             "LUNES"
         ],
-        "kcal_totales": 479.0,
-        "grasa_total": 16.96,
-        "carbohidratos_totales": 12.98,
-        "proteina_total": 63.52
+        "kcal_totales": 570.0,
+        "grasa_total": 13.03,
+        "carbohidratos_totales": 78.63,
+        "proteina_total": 29.54
     },
     {
         "id": 15,
-        "nombre": "Macarrones  (Cambiar pesto por tomate frito)",
+        "nombre": "Macarrones con Mozzarella  (Cambiar pesto por tomate frito)",
         "tipo": "COMIDA",
         "imagen": "imagenes/015_pasta_cottage.png",
         "enlace_tiktok": "https://www.tiktok.com/@fznutricionfemenina/photo/7598653856121146646?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
         "ingredientes": [
             {
                 "ingrediente": "Macarrones",
-                "cantidad": "120 gr"
+                "cantidad": "100 gr"
             },
             {
                 "ingrediente": "Tomate cherry",
-                "cantidad": "100 gr"
+                "cantidad": "50 gr"
             },
             {
-                "ingrediente": "Queso Cottage",
-                "cantidad": "100 gr"
+                "ingrediente": "Queso Mozzarella Light",
+                "cantidad": "1 ud"
             },
             {
                 "ingrediente": "Tomate frito",
@@ -475,12 +437,12 @@
             }
         ],
         "dias": [
-            "LUNES"
+            "MARTES"
         ],
         "kcal_totales": 652.0,
-        "grasa_total": 8.87,
-        "carbohidratos_totales": 97.6,
-        "proteina_total": 43.99
+        "grasa_total": 14.87,
+        "carbohidratos_totales": 80.6,
+        "proteina_total": 46.00
     },
     {
         "id": 16,
@@ -510,7 +472,12 @@
             "VIERNES",
             "SABADO",
             "DOMINGO"
-        ]
+        ],
+        
+        "kcal_totales": 88.0,
+        "grasa_total": 1.0,
+        "carbohidratos_totales": 15.0,
+        "proteina_total": 4.69
     },
     {
         "id": 17,
@@ -521,11 +488,11 @@
         "ingredientes": [
             {
                 "ingrediente": "1 Vaso de Leche desnatada",
-                "cantidad": "250 ml"
+                "cantidad": "200 ml"
             },
             {
                 "ingrediente": "Cacao Puro Desgrasado",
-                "cantidad": "30 g"
+                "cantidad": "8 g"
             }
         ],
         "dias": [
@@ -536,63 +503,12 @@
             "VIERNES",
             "SABADO",
             "DOMINGO"
-        ]
-    },
-    {
-        "id": 18,
-        "nombre": "Tostada de pavo",
-        "tipo": "MERIENDA",
-        "imagen": null,
-        "enlace_tiktok": null,
-        "ingredientes": [
-            {
-                "ingrediente": "Pan de molde",
-                "cantidad": "1 Rebanada"
-            },
-            {
-                "ingrediente": "Queso philadelphia",
-                "cantidad": "20 gr"
-            },
-            {
-                "ingrediente": "Pechuga de Pavo cocida",
-                "cantidad": "1 Loncha"
-            }
         ],
-        "dias": [
-            "LUNES",
-            "MARTES",
-            "MIERCOLES",
-            "JUEVES",
-            "VIERNES",
-            "SABADO",
-            "DOMINGO"
-        ]
-    },
-    {
-        "id": 19,
-        "nombre": "Queso fresco batido",
-        "tipo": "MERIENDA",
-        "imagen": null,
-        "enlace_tiktok": null,
-        "ingredientes": [
-            {
-                "ingrediente": "Queso freco batido 0%",
-                "cantidad": "62 gr"
-            },
-            {
-                "ingrediente": "Frutos Rojos",
-                "cantidad": "1 puñado"
-            }
-        ],
-        "dias": [
-            "LUNES",
-            "MARTES",
-            "MIERCOLES",
-            "JUEVES",
-            "VIERNES",
-            "SABADO",
-            "DOMINGO"
-        ]
+        
+        "kcal_totales": 104.0,
+        "grasa_total": 1.7,
+        "carbohidratos_totales": 11.79,
+        "proteina_total": 8.6
     },
     {
         "id": 20,
@@ -607,7 +523,7 @@
             },
             {
                 "ingrediente": "Queso philadelphia",
-                "cantidad": "20 gr"
+                "cantidad": "15 gr"
             },
             {
                 "ingrediente": "Jamon serrano",
@@ -622,6 +538,47 @@
             "VIERNES",
             "SABADO",
             "DOMINGO"
-        ]
+        ],
+        
+        "kcal_totales": 145.0,
+        "grasa_total": 4.7,
+        "carbohidratos_totales": 16.0,
+        "proteina_total": 9.8
+    },
+    {
+        "id": 21,
+        "nombre": "Macarrones con salsa de calabacin",
+        "tipo": "COMIDA",
+        "imagen": "imagenes/014_macarrones_calabacin.png",
+        "enlace_tiktok": "https://www.tiktok.com/@myebycosta/video/7696593808800124182?is_from_webapp=1&sender_device=pc&web_id=7619721183383078422",
+        "ingredientes": [
+            {
+                "ingrediente": "Macarrones",
+                "cantidad": "100 gr"
+            },
+            {
+                "ingrediente": "calabacin",
+                "cantidad": "1 ud"
+            },
+            {
+                "ingrediente": "Leche desnatada",
+                "cantidad": "100"
+            },
+            {
+                "ingrediente": "Queso rallado",
+                "cantidad": "50 gr"
+            },
+            {
+                "ingrediente": "Queso Cottage",
+                "cantidad": "200 gr"
+            }
+        ],
+        "dias": [
+            "JUEVES"
+        ],
+        "kcal_totales": 700.0,
+        "grasa_total": 20.87,
+        "carbohidratos_totales": 77.6,
+        "proteina_total": 53.00
     }
 ]
