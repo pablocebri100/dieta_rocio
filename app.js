@@ -31,6 +31,72 @@ document.addEventListener('DOMContentLoaded', () => {
     filtroDias.addEventListener('change', renderizarMenu);
     selectorOrden.addEventListener('change', renderizarMenu);
 
+    // --- NUEVA FUNCIÓN: MODAL PRO PARA LAS ALTERNATIVAS ---
+    function abrirModalReceta(plato) {
+        const modalPrevio = document.getElementById('modal-receta');
+        if (modalPrevio) modalPrevio.remove();
+
+        const overlay = document.createElement('div');
+        overlay.id = 'modal-receta';
+        overlay.style.position = 'fixed';
+        overlay.style.top = '0';
+        overlay.style.left = '0';
+        overlay.style.width = '100vw';
+        overlay.style.height = '100vh';
+        overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.8)';
+        overlay.style.zIndex = '9999';
+        overlay.style.display = 'flex';
+        overlay.style.justifyContent = 'center';
+        overlay.style.alignItems = 'center';
+        overlay.style.backdropFilter = 'blur(4px)'; 
+
+        // Botón "X" exterior
+        const btnCerrar = document.createElement('div');
+        btnCerrar.innerHTML = '&times;';
+        btnCerrar.style.position = 'absolute';
+        btnCerrar.style.top = '20px';
+        btnCerrar.style.right = '30px';
+        btnCerrar.style.color = '#fff';
+        btnCerrar.style.fontSize = '50px';
+        btnCerrar.style.fontWeight = 'bold';
+        btnCerrar.style.cursor = 'pointer';
+        btnCerrar.style.zIndex = '10000';
+        btnCerrar.style.lineHeight = '1';
+        
+        // Contenedor interno de la tarjeta
+        const contenedorInterno = document.createElement('div');
+        contenedorInterno.style.backgroundColor = '#fff';
+        contenedorInterno.style.borderRadius = '12px';
+        contenedorInterno.style.padding = '20px';
+        contenedorInterno.style.maxWidth = '90%';
+        contenedorInterno.style.width = '500px'; 
+        contenedorInterno.style.maxHeight = '90vh';
+        contenedorInterno.style.overflowY = 'auto';
+        contenedorInterno.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+        
+        const tarjeta = crearTarjetaPlato(plato, true);
+        
+        // Limpiamos los botones interactivos dentro del modal para evitar recursividad
+        const botonesModal = tarjeta.querySelectorAll('button');
+        botonesModal.forEach(btn => {
+            if(btn.textContent.includes('Similares')) {
+                btn.nextElementSibling?.remove(); 
+                btn.remove(); 
+            }
+        });
+
+        contenedorInterno.appendChild(tarjeta);
+        overlay.appendChild(btnCerrar);
+        overlay.appendChild(contenedorInterno);
+        document.body.appendChild(overlay);
+
+        const cerrarModal = () => overlay.remove();
+        btnCerrar.addEventListener('click', cerrarModal);
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) cerrarModal(); // Cierra si haces clic fuera de la tarjeta blanca
+        });
+    }
+
     function crearTarjetaPlato(plato, mostrarMacros = true) {
         const platoContenedor = document.createElement('div');
         platoContenedor.className = 'plato-contenedor';
@@ -57,14 +123,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
             if (plato.kcal_totales) {
                 const etiquetaKcal = document.createElement('span');
-                etiquetaKcal.textContent = `🔥 ${plato.kcal_totales} kcal`;
+                etiquetaKcal.textContent = ` ${plato.kcal_totales} kcal`;
                 etiquetaKcal.style.color = '#e67e22';
                 etiquetaKcal.style.fontWeight = 'bold';
                 contenedorDerecha.appendChild(etiquetaKcal);
             }
             if (plato.proteina_total) {
                 const etiquetaProt = document.createElement('span');
-                etiquetaProt.textContent = `🥩 ${plato.proteina_total}g Prot`;
+                etiquetaProt.textContent = ` ${plato.proteina_total}g Prot`;
                 etiquetaProt.style.color = '#2980b9';
                 etiquetaProt.style.fontWeight = 'bold';
                 contenedorDerecha.appendChild(etiquetaProt);
@@ -93,13 +159,118 @@ document.addEventListener('DOMContentLoaded', () => {
         platoTitulo.textContent = plato.nombre;
         platoInfo.appendChild(platoTitulo);
 
+        // CONTENEDOR DE BOTONES (TIKTOK Y SIMILARES)
+        const contenedorBotones = document.createElement('div');
+        contenedorBotones.style.display = 'flex';
+        contenedorBotones.style.gap = '10px';
+        contenedorBotones.style.marginTop = '10px';
+        contenedorBotones.style.flexWrap = 'wrap';
+
         if (plato.enlace_tiktok) {
             const btnTiktok = document.createElement('a');
             btnTiktok.className = 'btn-tiktok';
             btnTiktok.href = plato.enlace_tiktok;
             btnTiktok.target = '_blank';
             btnTiktok.textContent = 'Ver TikTok';
-            platoInfo.appendChild(btnTiktok);
+            btnTiktok.style.display = 'inline-block';
+            btnTiktok.style.padding = '6px 12px';
+            btnTiktok.style.backgroundColor = '#000';
+            btnTiktok.style.color = '#fff';
+            btnTiktok.style.textDecoration = 'none';
+            btnTiktok.style.borderRadius = '4px';
+            btnTiktok.style.fontSize = '0.9em';
+            contenedorBotones.appendChild(btnTiktok);
+        }
+
+        const tipoParaAlternativa = (plato.tipo || '').toUpperCase();
+        if (plato.kcal_totales && (tipoParaAlternativa === 'COMIDA' || tipoParaAlternativa === 'CENA')) {
+            const btnAlternativas = document.createElement('button');
+            btnAlternativas.textContent = 'Similar';
+            btnAlternativas.style.padding = '6px 10px';
+            btnAlternativas.style.backgroundColor = '#D4A373';
+            btnAlternativas.style.color = 'white';
+            btnAlternativas.style.border = 'none';
+            btnAlternativas.style.borderRadius = '4px';
+            btnAlternativas.style.cursor = 'pointer';
+            btnAlternativas.style.fontSize = '0.9em';
+            btnAlternativas.style.fontWeight = 'bold';
+
+            const panelAlternativas = document.createElement('div');
+            panelAlternativas.style.display = 'none';
+            panelAlternativas.style.marginTop = '10px';
+            panelAlternativas.style.padding = '12px';
+            panelAlternativas.style.backgroundColor = '#faf0e5'; 
+            panelAlternativas.style.border = '1px solid #d4b18f';
+            panelAlternativas.style.borderRadius = '6px';
+            panelAlternativas.style.fontSize = '0.9em';
+            panelAlternativas.style.color = '#333';
+
+            btnAlternativas.addEventListener('click', () => {
+                if (panelAlternativas.style.display === 'block') {
+                    panelAlternativas.style.display = 'none';
+                    btnAlternativas.style.backgroundColor = '#D4A373';
+                    return;
+                }
+
+                const misKcal = Number(plato.kcal_totales);
+                const opciones = datosMenu.filter(p => {
+                    if (p.id === plato.id) return false; 
+                    if (!p.kcal_totales) return false;   
+                    const tipoOpcion = (p.tipo || '').toUpperCase();
+                    if (tipoOpcion !== 'COMIDA' && tipoOpcion !== 'CENA') return false; 
+                    return Math.abs(Number(p.kcal_totales) - misKcal) <= 50;
+                });
+
+                panelAlternativas.innerHTML = ''; 
+                if (opciones.length === 0) {
+                    panelAlternativas.innerHTML = '<i>No hay opciones similares en un rango de ±50 kcal.</i>';
+                } else {
+                    const tituloPanel = document.createElement('strong');
+                    tituloPanel.textContent = `Opciones entre ${Math.round(misKcal - 50)} y ${Math.round(misKcal + 50)} kcal:`;
+                    tituloPanel.style.display = 'block';
+                    tituloPanel.style.marginBottom = '10px';
+                    panelAlternativas.appendChild(tituloPanel);
+
+                    const listaUl = document.createElement('ul');
+                    listaUl.style.margin = '0';
+                    listaUl.style.paddingLeft = '20px';
+                    
+                    opciones.forEach(op => {
+                        const li = document.createElement('li');
+                        li.style.marginBottom = '6px';
+                        
+                        // Creación del enlace interactivo
+                        const enlaceAlternativa = document.createElement('span');
+                        enlaceAlternativa.textContent = op.nombre;
+                        enlaceAlternativa.style.color = '#2980b9';
+                        enlaceAlternativa.style.textDecoration = 'underline';
+                        enlaceAlternativa.style.cursor = 'pointer';
+                        enlaceAlternativa.style.fontWeight = 'bold';
+                        
+                        enlaceAlternativa.addEventListener('click', () => {
+                            abrirModalReceta(op);
+                        });
+                        
+                        const textoExtra = document.createTextNode(` (${op.tipo}) -  ${op.kcal_totales} kcal`);
+                        
+                        li.appendChild(enlaceAlternativa);
+                        li.appendChild(textoExtra);
+                        listaUl.appendChild(li);
+                    });
+                    panelAlternativas.appendChild(listaUl);
+                }
+
+                panelAlternativas.style.display = 'block';
+                btnAlternativas.style.backgroundColor = '#e7b787'; 
+            });
+
+            contenedorBotones.appendChild(btnAlternativas);
+            platoInfo.appendChild(contenedorBotones);
+            platoInfo.appendChild(panelAlternativas);
+        } else {
+            if (plato.enlace_tiktok) {
+                platoInfo.appendChild(contenedorBotones);
+            }
         }
 
         platoHeader.appendChild(platoInfo);
@@ -137,7 +308,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         contenedorMenu.innerHTML = ''; 
 
-        // 1. MODO ORDENAMIENTO (LISTA PLANA)
         if (criterioOrden !== 'defecto') {
             let recetasFiltradas = datosMenu.filter(p => {
                 const tipo = p.tipo ? p.tipo.toUpperCase() : "";
@@ -178,7 +348,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return; 
         }
 
-        // 2. MODO CALENDARIO
         const menuAgrupado = {};
         ordenDias.forEach(dia => menuAgrupado[dia] = []);
 
@@ -227,14 +396,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (totalKcalDia > 0) {
                     const spanKcal = document.createElement('span');
                     spanKcal.textContent = `${Math.round(totalKcalDia)} kcal`; 
-                    spanKcal.style.color = '#fffd';
+                    spanKcal.style.color = '#fffe';
                     contenedorTotales.appendChild(spanKcal);
                 }
                 
                 if (totalProtDia > 0) {
                     const spanProt = document.createElement('span');
-                    spanProt.textContent = `${Math.round(totalProtDia)}gr Prot`;
-                    spanProt.style.color = '#fffd';
+                    spanProt.textContent = `${Math.round(totalProtDia)}g Prot`;
+                    spanProt.style.color = '#fffe';
                     contenedorTotales.appendChild(spanProt);
                 }
                 tituloDia.appendChild(contenedorTotales);
@@ -257,6 +426,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const comidaSeccion = document.createElement(seccion.plegable ? 'details' : 'div');
                 comidaSeccion.className = 'comida-seccion';
+                if (seccion.plegable) {
+                    comidaSeccion.style.cursor = 'pointer';
+                    comidaSeccion.style.marginTop = '10px';
+                    comidaSeccion.style.marginBottom = '10px';
+                }
 
                 let kcalSeccion = 0;
                 let protSeccion = 0;
@@ -272,9 +446,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 cabeceraSeccion.style.borderBottom = '2px solid #ecf0f1';
                 cabeceraSeccion.style.padding = '8px 5px';
                 cabeceraSeccion.style.outline = 'none';
-                cabeceraSeccion.style.listStyle = 'none'; // Oculta el triángulo por defecto del navegador
+                cabeceraSeccion.style.listStyle = 'none'; 
 
-                // Estilos específicos de interactividad para secciones desplegables
                 if (seccion.plegable) {
                     cabeceraSeccion.style.cursor = 'pointer';
                     cabeceraSeccion.style.borderRadius = '6px';
@@ -288,7 +461,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     });
                 }
 
-                // Lado izquierdo: Flecha de estado + Título
                 const tituloContenedor = document.createElement('div');
                 tituloContenedor.style.display = 'flex';
                 tituloContenedor.style.alignItems = 'center';
@@ -297,13 +469,12 @@ document.addEventListener('DOMContentLoaded', () => {
                 let iconoFlecha = null;
                 if (seccion.plegable) {
                     iconoFlecha = document.createElement('span');
-                    iconoFlecha.textContent = '▶'; // Flecha cerrada por defecto
+                    iconoFlecha.textContent = '▶'; 
                     iconoFlecha.style.fontSize = '0.8em';
                     iconoFlecha.style.color = '#e67e22';
                     iconoFlecha.style.transition = 'transform 0.2s ease';
                     tituloContenedor.appendChild(iconoFlecha);
 
-                    // Escuchamos el cambio de estado para orientar la flecha
                     comidaSeccion.addEventListener('toggle', () => {
                         if (comidaSeccion.open) {
                             iconoFlecha.textContent = '▼';
@@ -321,7 +492,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 cabeceraSeccion.appendChild(tituloContenedor);
 
-                // Lado derecho: Macros
                 if (kcalSeccion > 0 || protSeccion > 0) {
                     const macrosSeccion = document.createElement('div');
                     macrosSeccion.style.display = 'flex';
@@ -330,14 +500,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     
                     if (kcalSeccion > 0) {
                         const sKcal = document.createElement('span');
-                        sKcal.textContent = `${Math.round(kcalSeccion)} kcal`;
+                        sKcal.textContent = `${Math.round(kcalSeccion)} Kcal`;
                         sKcal.style.color = '#444';
                         sKcal.style.fontWeight = 'bold';
                         macrosSeccion.appendChild(sKcal);
                     }
                     if (protSeccion > 0) {
                         const sProt = document.createElement('span');
-                        sProt.textContent = `${Math.round(protSeccion)}g Prot`;
+                        sProt.textContent = `${Math.round(protSeccion)}Gr Prot`;
                         sProt.style.color = '#444';
                         sProt.style.fontWeight = 'bold';
                         macrosSeccion.appendChild(sProt);
